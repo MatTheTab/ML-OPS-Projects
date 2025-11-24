@@ -211,3 +211,6 @@ task-1-lightning/data
 task-1-lightning/lightning_logs
 task-1-lightning/mlruns
 task-1-lightning/output
+
+# Task - 2
+task-2-model-serving/data
