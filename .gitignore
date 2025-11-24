@@ -213,4 +213,6 @@ task-1-lightning/mlruns
 task-1-lightning/output
 
 # Task - 2
-task-2-model-serving/data
+task-2-model-serving/bentoml/data
+task-2-model-serving/triton/data
+task-2-model-serving/triton/model_repository/lit-autoencoder/1/model.pt
