@@ -1,0 +1,14 @@
+service: "service:TorchService"
+labels:
+  owner: "you"
+  project: "torch-batch"
+
+runners:
+  # no runners here since you're serving via python code directly
+  enable_async: true
+
+apis:
+  predict:
+    batch:
+      max_batch_size: 32        # maximum batch size
+      max_latency_ms: 10        # how long to wait for batching
