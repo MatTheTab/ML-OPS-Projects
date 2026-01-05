@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+import aws_cdk as cdk
 from aws_cdk import (
     Stack,
     aws_s3 as s3,
@@ -26,7 +28,7 @@ class MlDeploymentStack(Stack):
         ml_lambda = _lambda.DockerImageFunction(
             self,
             "MLInferenceFunction",
-            code=_lambda.DockerImageCode.from_image_asset("./app"),
+            code=_lambda.DockerImageCode.from_image_asset("."),
             memory_size=2048,  # ML models need more RAM
             timeout=Duration.seconds(30),
         )
@@ -40,3 +42,8 @@ class MlDeploymentStack(Stack):
             s3n.LambdaDestination(ml_lambda),
             s3.NotificationKeyFilter(suffix=".jpg"),  # Only trigger for JPGs
         )
+
+
+app = cdk.App()
+MlDeploymentStack(app, "MlDeploymentStack")
+app.synth()
