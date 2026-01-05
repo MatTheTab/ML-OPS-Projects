@@ -217,5 +217,9 @@ task-2-model-serving/bentoml/data
 task-2-model-serving/triton/data
 task-2-model-serving/triton/model_repository/lit-autoencoder/1/model.pt
 
+# Task - 3
+task-3-aws/MLOps-Aws-3-key.pem
+task-3-aws/imgs
+
 #Task - 5
 task-5-rag/data

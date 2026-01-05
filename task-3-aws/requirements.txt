@@ -1,0 +1,4 @@
+bentoml==1.4.29
+torch==2.9.0
+transformers==4.57.3
+pillow==12.0.0

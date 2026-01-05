@@ -1,0 +1,10 @@
+service: "service:MobileNetService"
+labels:
+  owner: me
+include:
+  - "service.py"
+python:
+  packages:
+    - torch==2.9.0
+    - transformers==4.57.3
+    - pillow==12.0.0
