@@ -216,3 +216,6 @@ task-1-lightning/output
 task-2-model-serving/bentoml/data
 task-2-model-serving/triton/data
 task-2-model-serving/triton/model_repository/lit-autoencoder/1/model.pt
+
+#Task - 5
+task-5-rag/data
