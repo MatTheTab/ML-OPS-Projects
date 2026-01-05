@@ -221,5 +221,9 @@ task-2-model-serving/triton/model_repository/lit-autoencoder/1/model.pt
 task-3-aws/MLOps-Aws-3-key.pem
 task-3-aws/imgs
 
+# Task - 4
+task-4-lambda/data
+task-4-lambda/keys.txt
+
 #Task - 5
 task-5-rag/data
